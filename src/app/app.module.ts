@@ -17,7 +17,9 @@ import { NewsComponent } from './main-content/news/news.component';
 import { TestimonialComponent } from './main-content/testimonial/testimonial.component';
 import { OurStoryDetailsComponent } from './main-content/our-story/our-story-details/our-story-details.component';
 import { FooterComponent } from './footer/footer.component';
-import { MainContentModule } from './main-content/main-content.module';
+
+import { BenefitsComponent } from './main-content/benefits/benefits.component';
+import { AromaticCoconut2Component } from './main-content/aromatic-coconut2/aromatic-coconut2.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { MainContentModule } from './main-content/main-content.module';
     TestimonialComponent,
     OurStoryDetailsComponent,
     FooterComponent,
+    BenefitsComponent,
+    AromaticCoconut2Component,
     
     
   ],
@@ -40,8 +44,6 @@ import { MainContentModule } from './main-content/main-content.module';
     NgbModule,
     BrowserModule,
     AppRoutingModule,
-    MainContentModule,
-    
     
   ],
   providers: [],

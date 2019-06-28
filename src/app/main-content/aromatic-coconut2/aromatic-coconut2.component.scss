@@ -1,0 +1,55 @@
+.container {
+    max-width: 1920px;
+    
+}
+
+
+.title {
+    color: #19428A;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.para {
+    font-size: 25px;
+    text-indent: 50px;
+    color: black;
+}
+
+.btn-specific {
+    background-color: #296248;
+    padding: 10px 25px 10px 25px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.carousel-caption {
+    background: white;
+    width: 694px;
+    height: 634px;
+    border-radius: 10px;
+    padding: 55px;
+    text-align: left;
+    margin-bottom: 170px;
+    margin-left: 650px;
+}
+
+.carousel-indicators {
+    margin-bottom: 50px;
+    li {
+        border: #707070 solid 1px;
+        border-radius: 100%;
+        border: none;
+        background-color: #fff;
+        height: 35px;
+        width: 35px;
+        transition: all 0.25s ease;
+        margin-right: 30px;
+        &.active, &.hover {
+            width: 40px;
+            height: 40px;
+            background-color: #505050;
+        }
+    }
+}

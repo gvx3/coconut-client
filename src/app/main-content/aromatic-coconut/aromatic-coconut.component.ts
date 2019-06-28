@@ -11,6 +11,6 @@ export class AromaticCoconutComponent implements OnInit {
 
   ngOnInit() {
   }
-  aromatic_title = "Aromatic Coconut";
-  aromatic_para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi odit quasi labore temporibus optio aperiam autem distinctio, quia doloremque architecto, veritatis atque aliquid officiis vero iure fugiat praesentium et?"
+  aromatic_title = "Aromatic Jelly Coconut Product";
+  aromatic_paragraph = "Quality Aromatic coconuts come from a special soil in Damnoen Saduak, Ratchaburi, Thailand. The soil that they are grown in, used to be under sea level in the past."
 }

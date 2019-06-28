@@ -1,0 +1,32 @@
+.circle {
+    height: 346px;
+    width: 346px;
+    border-radius: 50%;
+    background-color: #296248;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 35%;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 90px;
+    overflow: hidden;
+    font-weight: bold;
+    h1 {
+        font-size: 40px;
+    }
+}
