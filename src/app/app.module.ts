@@ -14,11 +14,11 @@ import { OurStoryComponent } from './main-content/our-story/our-story.component'
 import { CoconutDrinkComponent } from './main-content/coconut-drink/coconut-drink.component';
 import { AromaticCoconutComponent } from './main-content/aromatic-coconut/aromatic-coconut.component';
 import { NewsComponent } from './main-content/news/news.component';
-import { TestimonialComponent } from './main-content/testimonial/testimonial.component';
+
 import { OurStoryDetailsComponent } from './main-content/our-story/our-story-details/our-story-details.component';
 import { FooterComponent } from './footer/footer.component';
 
-import { BenefitsComponent } from './main-content/benefits/benefits.component';
+
 import { AromaticCoconut2Component } from './main-content/aromatic-coconut2/aromatic-coconut2.component';
 
 
@@ -26,25 +26,12 @@ import { AromaticCoconut2Component } from './main-content/aromatic-coconut2/arom
   declarations: [
     AppComponent,
     NavbarComponent,
-    IntroComponent,
-    MainContentComponent,
-    OurStoryComponent,
-    CoconutDrinkComponent,
-    AromaticCoconutComponent,
-    NewsComponent,
-    TestimonialComponent,
-    OurStoryDetailsComponent,
     FooterComponent,
-    BenefitsComponent,
-    AromaticCoconut2Component,
-    
-    
   ],
   imports: [
-    NgbModule,
     BrowserModule,
     AppRoutingModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

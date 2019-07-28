@@ -5,9 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {path: "home", component: MainContentComponent},
-  {path: "our-story", component: OurStoryDetailsComponent},
-  {path: "", redirectTo: "home", pathMatch: 'full'}
+  // {path: 'home', component: MainContentComponent},
+  // {path: 'our-story', component: OurStoryDetailsComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', loadChildren: '../app/main-content/main-content.module#MainContentModule'},
+  { path: 'news', loadChildren: '../app/main-content/news/news.module#NewsModule'},
+  { path: 'store', loadChildren: '../app/main-content/store/store.module#StoreModule'}
 ];
 
 @NgModule({
