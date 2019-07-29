@@ -1,33 +1,12 @@
-header {
-    overflow: hidden;
-    height: 110vh;
-    background-image: url("../../../assets/img/rolands-varsbergs-1441016-unsplash.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-}
-
-.text-box {
-    background: white;
-    width: 720px;
-    height: 660px;
-    font-family: 'Mitr', sans-serif;
-    border-radius: 10px;
-    margin-left: 240px;
-    margin-top: 90px;
-    padding: 70px;
-}
-
 .title {
-    color: #19428A;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 100px;
+    color: #4E4E4E;
+    font-size: 60px;
 }
 
-.para {
+.description {
     font-size: 25px;
     text-indent: 80px;
+    color: #6E6D6D;
     
 }
 
@@ -45,3 +24,24 @@ header {
     margin-top: 30px;
 }
 
+.text-box {
+    padding-top: 200px;
+    padding-left: 25px;
+}
+
+.description-box {
+    padding-top: 50px;
+}
+
+.button-box {
+    padding-top: 50px;
+}
+
+.button-style {
+    background-color: #4E4E4E; 
+    color: #FFFFFF; 
+    font-size: 25px;
+    width: 220px;
+    height: 60px;
+    
+}

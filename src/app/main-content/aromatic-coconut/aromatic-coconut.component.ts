@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../../app.component.scss','./aromatic-coconut.component.scss']
 })
 export class AromaticCoconutComponent implements OnInit {
-
+  aromaticTitle = 'Thai aromatic coconut jelly drink';
   constructor() { }
 
   ngOnInit() {
   }
-  aromatic_title = "Aromatic Jelly Coconut Product";
-  aromatic_paragraph = "Quality Aromatic coconuts come from a special soil in Damnoen Saduak, Ratchaburi, Thailand. The soil that they are grown in, used to be under sea level in the past."
 }

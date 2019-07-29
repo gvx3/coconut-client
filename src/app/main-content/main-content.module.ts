@@ -10,6 +10,9 @@ import { AromaticCoconutComponent } from './aromatic-coconut/aromatic-coconut.co
 
 
 import { OurStoryDetailsComponent } from './our-story/our-story-details/our-story-details.component';
+import { ProductComponent } from './product/product.component';
+import { AromaticCoconutFruitComponent } from './aromatic-coconut-fruit/aromatic-coconut-fruit.component';
+import { CocoDamnoenComponent } from './coco-damnoen/coco-damnoen.component';
 
 
 
@@ -21,6 +24,9 @@ import { OurStoryDetailsComponent } from './our-story/our-story-details/our-stor
     CoconutDrinkComponent,
     AromaticCoconutComponent,
     OurStoryDetailsComponent,
+    ProductComponent,
+    AromaticCoconutFruitComponent,
+    CocoDamnoenComponent,
 
 
   ],

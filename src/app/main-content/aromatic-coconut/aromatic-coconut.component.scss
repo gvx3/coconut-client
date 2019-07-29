@@ -1,7 +1,13 @@
 .title {
-    font-size: 70px;
-    color: #19428A;
+    font-size: 50px;
+    color: #4E4E4E;
     font-weight: bold;
+}
+
+.content-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .paragraph {
@@ -9,10 +15,52 @@
     text-indent: 50px;
 }
 
-.container {
-    max-width: 1440px;    
-}
-
 .pos {
     margin: 90px 90px;
+}
+
+.shape {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #A99371;
+    position: relative;
+}
+
+.shape-img1 {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    max-width: 74px;
+    max-height: 70px;
+}
+
+.shape-img2 {
+    position: absolute;
+    left: 23%;
+    top: 13%;
+    max-width: 74px;
+    max-height: 70px;
+}
+
+.shape-img21 {
+    position: absolute;
+    left: 36%;
+    top: 35%;
+    max-width: 74px;
+    max-height: 70px;
+}
+
+.shape-img3 {
+    position: absolute;
+    left: 23%;
+    top: 13%;
+    max-width: 74px;
+    max-height: 70px;
+}
+
+.text-area {
+    padding-top: 120px;
+    font-size: 30px;
+    color: #A2A97F;
 }

@@ -1,14 +1,58 @@
-<div class="contact text-center">
-  <div>
-    <h1>Contact us</h1>
+<div class="container-fluid">
+  <div class="contact">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-box">
+            <div>
+              <h1 style="font-size: 50px;">Contact us</h1>
+            </div>
+            <div class="top-space">
+              {{address}}
+            </div>
+            <div>
+              {{phone}}
+            </div>
+            <div>
+              {{mail}}
+            </div>
+          </div>
+            
+          
+        </div>
+        <div class="col-md-6">
+          <div class="letter-box">
+            <div>
+              <h1 style="font-size: 40px;">Newsletter</h1>
+            </div>
+            <div>
+              <div class="top-space">
+                <input class="input-style" placeholder="Email Address" type="text">
+                <button class="btn button-style">Subscribe</button>
+              </div>
+            </div>
+            <div class="icon-box top-space">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href=""><img src="../../assets/img/fb.png" alt=""></a>
+                </div>
+                <div class="col-md-3">
+                  <a href=""><img src="../../assets/img/twitter.png" alt=""></a>
+                </div>
+                <div class="col-md-3">
+                  <a href=""><img src="../../assets/img/instragram.png" alt=""></a>
+                </div>
+                <div class="col-md-3">
+                  <a href=""><img src="../../assets/img/line.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center right-reserve">
+        <p>© Riseplus Technology. All Rights Reserved 2018.</p>
+      </div>
   </div>
-    <div class="row">
-      <div class="col">
-        <h3>Maps goes here</h3>
-      </div>
-      <div class="col">
-        <p>Email: {{contactUs_email}}</p>
-        <p>Tel: {{contactUs_tel}}</p>
-      </div>
-    </div>
+
+  
 </div>

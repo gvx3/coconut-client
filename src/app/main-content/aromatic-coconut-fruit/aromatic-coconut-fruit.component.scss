@@ -1,0 +1,51 @@
+.content-box {
+    position: relative;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 60px;
+    color: #4E4E4E;
+}
+
+.description {
+    color: #6E6D6D;
+    font-size: 25px;
+    text-indent: 30px;
+}
+
+.description-box {
+    margin-top: 50px;
+    width: 530px;
+}
+
+.text-box {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 90%;
+}
+
+.bg {
+    background-image: url('../../../assets/img/aromatic_content-10.png');
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.benefit {
+    font-size: 28px;
+    width: 150px;
+    height: 200px;
+    margin-left: 12%;
+    margin-top: 23%;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+
+.img-box {
+    position: relative;
+    z-index: -1;
+}
