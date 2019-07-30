@@ -6,10 +6,9 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./intro.component.scss'],
 })
 export class IntroComponent implements OnInit {
-  
-  constructor() {
-    
-   }
+  title = 'coco damnoen';
+  description = 'Thai aromatic coconut jelly drink';
+  constructor() {}
 
   ngOnInit() {
   }

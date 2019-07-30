@@ -2,18 +2,18 @@
   <div class="contact">
       <div class="row">
         <div class="col-md-6">
-          <div class="content-box">
+          <div class="content-box" *ngIf="contact">
             <div>
               <h1 style="font-size: 50px;">Contact us</h1>
             </div>
             <div class="top-space">
-              {{address}}
+              {{contact.address}}
             </div>
             <div>
-              {{phone}}
+              {{contact.phone}}
             </div>
             <div>
-              {{mail}}
+              {{contact.mail}}
             </div>
           </div>
             
@@ -31,18 +31,18 @@
               </div>
             </div>
             <div class="icon-box top-space">
-              <div class="row">
+              <div class="row" *ngIf="contact">
                 <div class="col-md-3">
-                  <a href=""><img src="../../assets/img/fb.png" alt=""></a>
+                  <a href="{{contact.facebook_url}}" target="_blank"><img src="../../assets/img/fb.png" alt=""></a>
                 </div>
                 <div class="col-md-3">
-                  <a href=""><img src="../../assets/img/twitter.png" alt=""></a>
+                  <a href="{{contact.twitter_url}}"  target="_blank"><img src="../../assets/img/twitter.png" alt=""></a>
                 </div>
                 <div class="col-md-3">
-                  <a href=""><img src="../../assets/img/instragram.png" alt=""></a>
+                  <a href="{{contact.instagram_url}}" target="_blank"><img src="../../assets/img/instragram.png" alt=""></a>
                 </div>
                 <div class="col-md-3">
-                  <a href=""><img src="../../assets/img/line.png" alt=""></a>
+                  <a href="{{contact.line_url}}" target="_blank"><img src="../../assets/img/line.png" alt=""></a>
                 </div>
               </div>
             </div>

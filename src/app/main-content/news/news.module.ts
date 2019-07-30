@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { NewsRoutingModule } from './news-routing.module';
 import { NewsComponent } from './news.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
 
 @NgModule({
   declarations: [
-    NewsComponent
+    NewsComponent,
+    NewsDetailComponent
   ],
   imports: [
     CommonModule,

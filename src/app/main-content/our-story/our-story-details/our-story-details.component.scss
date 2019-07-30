@@ -1,47 +1,60 @@
-header {
-    
-    height: 110vh;
-    background-image: url("../../../../assets/img/rolands-varsbergs-1441016-unsplash.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-}
-
-.container {
-    max-width: 1440px;
-}
-
-.row {
-    margin-top: 140px;
-}
-
-.pos {
+.landing {
     position: relative;
-    min-height: 200px;
+    width: 100%;
+    height: 864px;
 }
 
-.pos1 {
+.title {
+    font-size: 180px;
+    bottom: 35%;
+    left: 33%;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 500px;
-    margin: 30px;
-    
-    h1 {
-        color: #19428A;
-        font-size: 40px;
-        font-weight: bold;
-        padding-bottom: 30px;
-    }
-    span {
-        font-size: 120px;
-        font-weight: bold;
-    }
-    p {
-        text-indent: 40px;
-        font-size: 25px;
-    }
+    color: #fff;
 }
 
+.description {
+    font-size: 40px;
+    bottom: 0%;
+    left: 36%;
+    position: absolute;
+    color: #fff;
+}
 
+.content-1 {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 58%;
+}
 
+.content-1-description {
+    position: relative;
+    font-size: 25px;
+    color: #4E4E4E;
+    text-indent: 5%;
+}
+
+.story-title {
+    color: #4E4E4E;
+    font-size: 60px;
+}
+
+.story-description {
+    font-size: 25px;
+    color: #6E6D6D;
+    text-indent: 5%;
+}
+
+.description-box {
+    padding-top: 20px;
+    width: 80%;
+}
+
+.text-box {
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.content-spacing {
+    padding-top: 50px;
+}
