@@ -24,11 +24,7 @@ export class FooterComponent implements OnInit {
     this.contactService.getContact()
     .subscribe(
       (data) => {
-        this.contact = data,
-        console.log('get contact:' + data),
-        console.log(data);
-        
-
+        this.contact = data;
       }
     );
   }

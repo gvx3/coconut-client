@@ -1,8 +1,14 @@
 <div class="container-fluid">
-  <div class="landing text-center">
-    <img class="" src="../../../../assets/img/our_story_landingpage-05.png" alt="">
-    <h1 class="title">{{landingTitle}}</h1>
-    <p class="description">{{landingDescription}}</p>
+  <div class="landing text-center" *ngIf="ourstoryLandingPage">
+    <div class="img-landing">
+      <img class="img-style" [src]="ourstoryLandingPage[0].image_url" alt="">
+    </div>
+    <div class="title-landing">
+      <h1 class="title">{{ourstoryLandingPage[0].title}}</h1>
+    </div>
+    <div class="description-landing">
+      <p class="description">{{ourstoryLandingPage[0].description}}</p>
+    </div>
   </div>
 
   <div class="content-1">

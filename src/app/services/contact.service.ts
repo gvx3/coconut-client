@@ -14,9 +14,7 @@ export class ContactService {
   constructor(private http: HttpClient) { }
 
   getContact(): Observable<any> {
-    return this.http.get<any>(this.baseUrl).pipe(
-      tap(data => console.log('Contact: ' + JSON.stringify(data)))
-    );
+    return this.http.get<any>(this.baseUrl).pipe();
   }
 
 }

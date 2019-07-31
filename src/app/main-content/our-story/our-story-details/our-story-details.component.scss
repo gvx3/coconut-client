@@ -4,24 +4,44 @@
     height: 864px;
 }
 
-.title {
-    font-size: 180px;
-    bottom: 35%;
-    left: 33%;
+.img-style {
+    width: 100%;
+    height: 100%;
+}
+
+.img-landing {
+    width: 100%;
+    height: 950px;
+}
+
+.title-landing {
     position: absolute;
+    bottom: 40%;
+    left: 27%;
+    width: 1000px;
+    text-align: center;
+}
+
+.title {
     color: #fff;
+    font-size: 180px;
+}
+
+.description-landing {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    width: 400px;
 }
 
 .description {
     font-size: 40px;
-    bottom: 0%;
-    left: 36%;
-    position: absolute;
+    text-align: center;
     color: #fff;
 }
 
 .content-1 {
-    margin-top: 300px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     width: 58%;

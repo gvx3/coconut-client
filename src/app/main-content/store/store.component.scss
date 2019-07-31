@@ -13,13 +13,34 @@
     height: 864px;
 }
 
-.title {
-    font-size: 180px;
-    bottom: 432px;
-    left: 786px;
+.title-landing {
     position: absolute;
+    bottom: 40%;
+    left: 33%;
+    width: 700px;
+    text-align: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 180px;
+}
+
+.description-landing {
+    position: absolute;
+    bottom: 20%;
+    left: 37%;
+    width: 400px;
+}
+
+.description {
+    font-size: 40px;
+    text-align: center;
     color: #fff;
 }
+
+
+/////
 
 .card {
     border: none;
