@@ -9,19 +9,23 @@
         </button>
         <div class="collapse navbar-collapse mg-right color" id="navbarSupportedContent">
           <ul class="nav navbar-nav ml-auto padding">
-            <li>
+            <li class="nav-item">
                 <a class="nav-item nav-link">Product</a>
             </li>
-            <li>
-                <a routerLink="/news" class="nav-item nav-link" href="#">News</a>
+            <li class="nav-item">
+                <a routerLink="/news" class="nav-link" href="#">News</a>
             </li>
-            <li>
-                <a routerLink="/store" class="nav-item nav-link" href="#">Store</a>
+            <li class="nav-item">
+                <a routerLink="/store" class="nav-link" href="#">Store</a>
             </li>
-            <li>
-                <a class="nav-item nav-link" href="#">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img src="../../assets/img/thailand.svg" alt="">
                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Action</a>
+                  <a class="dropdown-item" href="">Something else</a>
+                </div>
             </li>
           </ul>
         </div>
