@@ -2,22 +2,22 @@
   <div class="icon">
     <a routerLink="/news" href="">
       <div>
-        <i class="fas fa-angle-left"></i>
-        <p class="">News</p>
+        <i class="fas fa-angle-left"></i> News
       </div>
     </a>
   </div>
 
-  <div class="news-content">
+  <div class="news-details" *ngIf="detailNews">
     <div>
       <h1 class="news-title">
-        {{newsTitle}}
+        {{detailNews.title}}
       </h1>
     </div>
     <hr class="horizontal-line">
-    <div>
-
-    </div>
+     <div>
+       <p class="time-admin">{{detailNews.created_at | date:'longDate'}}, by {{detailNews.username}}</p>
+     </div>
+    <div class="" [innerHTML]="contentNews"></div>
   </div>
   
 </div>

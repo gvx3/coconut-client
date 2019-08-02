@@ -11,68 +11,46 @@
     </div>
   </div>
 
-  <div class="container-fluid content"> 
-    <div class="row">   
-      <div class="col-6 col-md-4">
-        <a routerLink="detail" href="">
+  <div class="container-top-box content"> 
+    <div class="row" *ngIf="topNews">   
+      <div class="col-md-4" *ngFor="let item of topNews">
+        <a [routerLink]="['/news/detail', item.id]">
           <div class="card small-card">
               <div class="card-body">
-                <img src="../../../assets/img/gilles-lambert-S_LhjpfIdm4-unsplash.png" alt="" class="card-img-top ">
+                <div class="img-top-box">
+                  <img [src]="item.image_url" alt="" class="img-style">
+                </div>
               <div class="card-title">
-                <h5 class="card-title text-center">Benefits “Coconut water” for health “ What is the best woman to drink?”</h5>
-                <p class="card-text small-text">Girls, have you heard that “coconut water” helps “women” look radiant.</p>
+                <h5 class="card-title text-center">{{item.title}}</h5>
+                <p class="card-text small-text">{{item.description}}</p>
               </div>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-6 col-md-4">
-          <a href="">
-            <div class="card small-card">
-                <div class="card-body">
-                  <img src="../../../assets/img/gilles-lambert-S_LhjpfIdm4-unsplash.png" alt="" class="card-img-top ">
-                <div class="card-title">
-                  <h5 class="card-title text-center">Benefits “Coconut water” for health “ What is the best woman to drink?”</h5>
-                  <p class="card-text small-text">Girls, have you heard that “coconut water” helps “women” look radiant.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-4">
-            <a href="">
-              <div class="card small-card">
-                  <div class="card-body">
-                    <img src="../../../assets/img/gilles-lambert-S_LhjpfIdm4-unsplash.png" alt="" class="card-img-top ">
-                  <div class="card-title">
-                    <h5 class="card-title text-center">Benefits “Coconut water” for health “ What is the best woman to drink?”</h5>
-                    <p class="card-text small-text">Girls, have you heard that “coconut water” helps “women” look radiant.</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
     </div>
   </div>
   <div class="latest">
     <div>
       <h1 class="title-section">Latest</h1>
     </div>
-      <div class="">
-        <div class="big-card">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="img-box">
-                <img src="../../../assets/img/landing_page-01.png" alt="" class="img-style">
+      <div class="" *ngIf="newsLatest">
+        <div class="big-card" *ngFor="let item of newsLatest">
+          <a [routerLink]="['/news/detail', item.id]">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="img-box">
+                  <img [src]="item.image_url" alt="" class="img-style">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="text-box">
+                  <h5 class="title-latest">{{item.title}}</h5>
+                  <p class="card-text big-text">{{item.description}}</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-8">
-              <div class="text-box">
-                <h5 class="title-latest">Thai aromatic coconut jelly drink</h5>
-                <p class="card-text big-text">Quality Aromatic coconuts come from a special soil in Damnoen Saduak, Ratchaburi, Thailand. The soil that they are grown in, used to be under sea level in the past. The aromatic coconuts contain all necessary vitamins and minerals that are beneficial for good health. Our quality product is made in Thailand. We capture the freshness of the coconut juice.</p>
-              </div>
-            </div>
-          </div>
+          </a>
           </div>
       </div>
   </div>
@@ -83,46 +61,23 @@
     </div>
     <div>
       <div class="content-news">
-        <div class="row">
-          <div class="col-md-4">
-              <a href="">
+        <div class="row" *ngIf="newsSuggested">
+          <div class="col-md-4" *ngFor="let item of newsSuggested">
+              <a [routerLink]="['/news/detail', item.id]">
                   <div class="card small-card">
                       <div class="card-body">
-                        <img src="../../../assets/img/gilles-lambert-S_LhjpfIdm4-unsplash.png" alt="" class="card-img-top ">
+                        <div class="img-small-box">
+                          <img [src]="item.image_url" alt="" class="img-style">
+                        </div>
                       <div class="card-title">
-                        <h5 class="card-title text-center">Benefits “Coconut water” for health “ What is the best woman to drink?”</h5>
-                        <p class="card-text small-text">Girls, have you heard that “coconut water” helps “women” look radiant.</p>
+                        <h5 class="card-title text-center">{{item.title}}</h5>
+                        <p class="card-text small-text">{{item.description}}</p>
                       </div>
                     </div>
                   </div>
-                </a>
+              </a>
           </div>
-          <div class="col-md-4">
-              <a href="">
-                  <div class="card small-card">
-                      <div class="card-body">
-                        <img src="../../../assets/img/gilles-lambert-S_LhjpfIdm4-unsplash.png" alt="" class="card-img-top ">
-                      <div class="card-title">
-                        <h5 class="card-title text-center">Benefits “Coconut water” for health “ What is the best woman to drink?”</h5>
-                        <p class="card-text small-text">Girls, have you heard that “coconut water” helps “women” look radiant.</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-          </div>
-          <div class="col-md-4">
-              <a href="">
-                  <div class="card small-card">
-                      <div class="card-body">
-                        <img src="../../../assets/img/gilles-lambert-S_LhjpfIdm4-unsplash.png" alt="" class="card-img-top ">
-                      <div class="card-title">
-                        <h5 class="card-title text-center">Benefits “Coconut water” for health “ What is the best woman to drink?”</h5>
-                        <p class="card-text small-text">Girls, have you heard that “coconut water” helps “women” look radiant.</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-          </div>
+
         </div>
       </div>
     </div>

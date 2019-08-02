@@ -1,55 +1,34 @@
 <div class="container-fluid">
-  <div class="text-center">
+  <div class="text-center" *ngIf="product">
     <div class="title-box">
-      <h1>{{productTitle}}</h1>
+      <h1>{{product[0].title}}</h1>
     </div>
     <div class="description-box">
-      <p>{{productDescription}}</p>
+      <p>{{product[0].description}}</p>
     </div>
   </div>
 
   <div class="text-box">
     <div class="row">
       <div class="col-md-6">
-        <div class="product-img">
-          <img src="" alt="">
+        <div class="img-large-box" *ngIf="product">
+          <img class="img-large-style" [src]="product[0].image_url" alt="">
         </div>
       </div>
       <div class="col-md-6">
         <div class="content-box">
-            <div class="row">
-              <div class="bg col-md-6">
-                <div class="ingredient-img">
-                  <img src="" alt="">
-                </div>
-                <div class="ingredient-description">
-                  <p>sometext</p>
-                </div>
-              </div>
-              <div class="bg col-md-6">
-                  <div class="ingredient-img">
-                    <img src="" alt="">
+            <div class="row" *ngIf="ingredient">
+              <div class="bg col-md-6" *ngFor="let i of ingredient">
+                <div class="small-content-box">
+                  <div class="img-ingredient">
+                    <img class="img-style" [src]="i.image_url" alt="">
                   </div>
                   <div class="ingredient-description">
-                    <p>sometext</p>
+                    <p>{{i.name}}</p>
                   </div>
                 </div>
-                <div class="bg col-md-6">
-                    <div class="ingredient-img">
-                      <img src="" alt="">
-                    </div>
-                    <div class="ingredient-description">
-                      <p>sometext</p>
-                    </div>
-                  </div>
-                  <div class="bg col-md-6">
-                      <div class="ingredient-img">
-                        <img src="" alt="">
-                      </div>
-                      <div class="ingredient-description">
-                        <p>sometext</p>
-                      </div>
-                    </div>
+              </div>
+              
             </div>
         </div> <!-- End content-box-->
       </div>

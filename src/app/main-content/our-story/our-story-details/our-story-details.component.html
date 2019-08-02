@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="landing text-center" *ngIf="ourstoryLandingPage">
     <div class="img-landing">
-      <img class="img-style" [src]="ourstoryLandingPage[0].image_url" alt="">
+      <img class="img-large-style" [src]="ourstoryLandingPage[0].image_url" alt="">
     </div>
     <div class="title-landing">
       <h1 class="title">{{ourstoryLandingPage[0].title}}</h1>
@@ -12,31 +12,53 @@
   </div>
 
   <div class="content-1">
-      <p class="content-1-description">Quality Aromatic coconuts come from a special soil in Damnoen Saduak, Ratchaburi, Thailand. The soil that they are grown in, used to be under sea level in the past. The aromatic coconuts contain all necessary vitamins and minerals that are beneficial for good health. Our quality product is made in Thailand. We capture the freshness of the coconut juice.</p>   
+      <p class="content-1-description">{{description}}</p>   
   </div>
 
-  <div class="content-2">
-    <div>
-      <div class="row content-spacing">
+  <div class="content-2" *ngIf="storyDetail">
+    <div *ngFor="let item of storyDetail; let i = index">
+      <div class="row content-spacing" *ngIf="i % 2 === 0">
         <div class="col-md-6">
           <div class="img-box">
-            <img src="../../../../assets/img/our_story_content1-07.png" alt="">
+            <img class="img-style" [src]="item.image_url" alt="">
           </div>
         </div>
         <div class="col-md-6">
           <div class="text-box">
+            <div class="count-number">
+              <p class="number">{{i + 1}}</p>
+            </div>
             <div>
-              <h1 class="story-title">{{storyTitle}}</h1>
+              <h1 class="story-title">{{item.title}}</h1>
             </div>
             <div class="description-box">
-              <p class="story-description">{{storyDescription}}</p>
+              <p class="story-description">{{item.description}}</p>
             </div>
           </div>
         </div>
       </div>
+      <div class="row content-spacing" *ngIf="i % 2 !== 0">
+          <div class="col-md-6">
+            <div class="text-box">
+              <div class="count-number">
+                <p class="number">{{i + 1}}</p>
+              </div>
+              <div>
+                <h1 class="story-title">{{item.title}}</h1>
+              </div>
+              <div class="description-box">
+                <p class="story-description">{{item.description}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img class="img-style" [src]="item.image_url" alt="">
+            </div>
+          </div>
+        </div>
       
-      
-    </div>
+    </div> <!-- End of ngFor-->
   </div>
     
 </div>

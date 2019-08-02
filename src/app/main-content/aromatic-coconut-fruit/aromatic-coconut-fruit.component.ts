@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AromaticCoconutService } from 'src/app/services/aromatic-coconut.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-aromatic-coconut-fruit',
@@ -6,12 +8,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aromatic-coconut-fruit.component.scss']
 })
 export class AromaticCoconutFruitComponent implements OnInit {
-  aromaticTitle = 'Aromatic coconut';
-  aromaticDescription = 'Quality Aromatic coconuts comes from a special soil in Ratchaburi. The soil that is used, used to be under sea level in the past. The aromatic coconuts contain all necessary vitamins and minerals that are beneficial for good health. Some benefits of Aromatic coconut juice';
-  benefitDescription = '';
-  constructor() { }
+  aromaticCoconut: any;
+  aromaticBenefit: any;
+  constructor(private aromaticService: AromaticCoconutService) { }
 
   ngOnInit() {
+    this.getAromatic();
+    this.getBenefit();
+  }
+
+  getAromatic(): void {
+    this.aromaticService.getAromatic().subscribe(
+      (data) => {
+        data.forEach((item) => {
+          if (item.image_url) {
+            item.image_url = environment.apiUrl + item.image_url;
+          }
+        });
+        this.aromaticCoconut = data;
+        console.log(data);
+      }
+    );
+  }
+
+  getBenefit(): void {
+    this.aromaticService.getBenefit().subscribe(
+      (data) => {
+        this.aromaticBenefit = data;
+        console.log(data);
+        
+      }
+    );
   }
 
 }

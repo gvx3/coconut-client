@@ -4,7 +4,7 @@
     height: 864px;
 }
 
-.img-style {
+.img-large-style {
     width: 100%;
     height: 100%;
 }
@@ -12,6 +12,16 @@
 .img-landing {
     width: 100%;
     height: 950px;
+}
+
+.img-style {
+    width: 100%;
+    height: 100%;
+}
+
+.img-box {
+    width: 100%;
+    height: 100%;
 }
 
 .title-landing {
@@ -71,10 +81,25 @@
 }
 
 .text-box {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 10%;
 }
 
 .content-spacing {
     padding-top: 50px;
+}
+
+.count-number {
+    background-color: #A99371;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    text-align: center;
+    
+}
+
+.number {
+    font-family: 'comic_sans_ms';
+    font-size: 100px;
+    color: #fff;
 }

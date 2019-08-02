@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OurStoryService } from 'src/app/services/our-story.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-our-story',
@@ -7,10 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurStoryComponent implements OnInit {
 
-  ourStoryTitle = 'Our Story';
-  ourStoryDescription = 'Quality Aromatic coconuts come from a special soil in Damnoen Saduak, Ratchaburi, Thailand. The soil that they are grown in, used to be under sea level in the past. The aromatic coconuts contain all necessary vitamins and minerals that are beneficial for good health. Our quality product is made in Thailand. We capture the freshness of the coconut juice.';
-  constructor() { }
+  storyHomePage: any;
+  storyDetail: any;
+  constructor(private storyService: OurStoryService) { }
 
   ngOnInit() {
+    this.getStoryHomePage();
+
   }
+
+  getStoryHomePage(): void {
+    const filter = {
+      our_story_type_id: 1
+    };
+    this.storyService.getStoryHomePage(filter).subscribe(
+      (data) => {
+        data.forEach( (item) => {
+          if (item.image_url) {
+            item.image_url = environment.apiUrl + item.image_url;
+          }
+        });
+        this.storyHomePage = data;
+      }
+    );
+  }
+
+
+
  }

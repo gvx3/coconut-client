@@ -1,17 +1,17 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" *ngIf="storyHomePage">
     <div class="col-md-6">
       <div>
-        <img src="../../../assets/img/our_story-03.png" alt="">
+        <img [src]="storyHomePage[0].image_url" alt="">
       </div>
     </div>
     <div class="col-md-6">
       <div class="text-box">
         <div>
-          <h1 class="title">{{ourStoryTitle}}</h1>
+          <h1 class="title">{{storyHomePage[0].title}}</h1>
         </div>
         <div class="description-box">
-          <p class="description">{{ourStoryDescription}}</p>
+          <p class="description">{{storyHomePage[0].description}}</p>
         </div>
         <div class="button-box">
           <a routerLink="/our-story">

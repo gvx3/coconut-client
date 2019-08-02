@@ -1,28 +1,28 @@
 <div class="container-fluid">
   <div class="content-box">
-    <div class="row">
+    <div class="row" *ngIf="aromaticCoconut">
       <div class="col-md-6">
         <div class="text-box">
             <div>
-              <h1 class="title">{{aromaticTitle}}</h1>
+              <h1 class="title">{{aromaticCoconut[0].title}}</h1>
             </div>
             <div class="description-box">
-              <p class="description">{{aromaticDescription}}</p>
+              <p class="description">{{aromaticCoconut[0].description}}</p>
             </div>
-            <div class="row">
-              <div class="bg col-md-4"> <!-- Loop -->
+            <div class="row" *ngIf="aromaticBenefit">
+              <div class="bg col-md-4">
                 <div class="benefit">
-                  <p>Slowing down of alzheimers</p>
+                  <p>{{aromaticBenefit[0].name}}</p>
                 </div>
               </div>
               <div class="bg col-md-4">
                   <div class="benefit">
-                    <p>Giving youthful and glowing skin</p>
+                    <p>{{aromaticBenefit[1].name}}</p>
                   </div>
                 </div>
                 <div class="bg col-md-4">
                     <div class="benefit">
-                      <p>The best refreshment drink and Sport drink</p>
+                      <p>{{aromaticBenefit[2].name}}</p>
                     </div>
                   </div>
             </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="col-md-6">
         <div>
-          <img class="img-box" src="../../../assets/img/aromatic-02.png" alt="">
+          <img class="img-style" [src]="aromaticCoconut[0].image_url" alt="">
         </div>
       </div>
     </div>

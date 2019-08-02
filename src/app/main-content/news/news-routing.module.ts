@@ -9,7 +9,7 @@ const routes: Routes = [
 
   ]
   },
-  { path: 'detail', component: NewsDetailComponent}
+  { path: 'detail/:id', component: NewsDetailComponent}
 ];
 
 @NgModule({

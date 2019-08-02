@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
 }
 
+.content-box {
+    width: 550px;
+}
+
 .description-box {
     padding-top: 50px;
 }
@@ -13,7 +17,18 @@
 
 }
 
-.product-img {
+.img-large-style {
+    height: 100%;
+    width: 100%;
+}
+
+.img-style {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.img-large-box {
     width: 592px;
     height: 696px;
     background: #A99371;
@@ -25,14 +40,16 @@
     background-repeat: no-repeat;
     padding-top: 50px;
     
+    
 }
 
-.ingredient-img {
+.img-ingredient {
     width: 104px;
     height: 104px;
     background: #EFE7DB;
     margin-left: 55px;
     margin-top: 40px;
+    
 }
 
 .text-box {
@@ -44,8 +61,16 @@
 }
 
 .ingredient-description {
-    margin-left: 65px;
-    margin-top: 50px;
+    width: 150px;
+    margin-left: 14%;
+    margin-top: 10px;
     font-size: 25px;
     color: #4E4E4E;
+    text-align: center;
 }
+
+.small-content-box {
+    height: 250px;
+    width: auto;
+}
+
