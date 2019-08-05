@@ -74,8 +74,7 @@ export class NewsComponent implements OnInit {
   }
   getTopNewsSuggested() {
     const filter = {
-      limit: 3,
-      order: 'id desc'
+      limit: 3
     };
     this.newsService.getTopNewsSuggested(filter).subscribe(
       (data) => {
