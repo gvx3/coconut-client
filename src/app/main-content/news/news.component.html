@@ -16,15 +16,15 @@
       <div class="col-md-4" *ngFor="let item of topNews">
         <a [routerLink]="['/news/detail', item.id]">
           <div class="card small-card">
-              <div class="card-body">
-                <div class="img-top-box">
-                  <img [src]="item.image_url" alt="" class="img-style">
-                </div>
-              <div class="card-title">
+            <!-- <div class="card-body"> -->
+              <div class="img-top-box">
+                <img [src]="item.image_url" alt="" class="img-style">
+              </div>
+              <div class="card-title-box">
                 <h5 class="card-title text-center">{{item.title}}</h5>
                 <p class="card-text small-text">{{item.description}}</p>
               </div>
-            </div>
+            <!-- </div> -->
           </div>
         </a>
       </div>
@@ -65,15 +65,15 @@
           <div class="col-md-4" *ngFor="let item of newsSuggested">
               <a [routerLink]="['/news/detail', item.id]">
                   <div class="card small-card">
-                      <div class="card-body">
-                        <div class="img-small-box">
-                          <img [src]="item.image_url" alt="" class="img-style">
-                        </div>
-                      <div class="card-title">
+                      <!-- <div class="card-body"> -->
+                      <div class="img-small-box">
+                        <img [src]="item.image_url" alt="" class="img-style">
+                      </div>
+                      <div class="card-title-box">
                         <h5 class="card-title text-center">{{item.title}}</h5>
                         <p class="card-text small-text">{{item.description}}</p>
                       </div>
-                    </div>
+                    <!-- </div> -->
                   </div>
               </a>
           </div>
