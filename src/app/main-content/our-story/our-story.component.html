@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <div class="row" *ngIf="storyHomePage">
-    <div class="col-md-6">
-      <div>
-        <img [src]="storyHomePage[0].image_url" alt="">
+    <div class="col col-md-6">
+      <div class="img-box">
+        <img class="img-style" [src]="storyHomePage[0].image_url" alt="">
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col col-md-6">
       <div class="text-box">
         <div>
           <h1 class="title">{{storyHomePage[0].title}}</h1>

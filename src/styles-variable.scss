@@ -1,7 +1,323 @@
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-);
+$breakpoint-xs-min: 320px;
+$breakpoint-xs-max: 414px;
+$breakpoint-md: 768px;
+
+@media (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max) {
+  
+  nav {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    // margin-left: 100px;
+  }
+
+  .landing {
+    height: 103vh !important;
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+
+  }
+
+  .img {
+    display: none;
+  }
+
+  .img-logo-style {
+    height: 100%;
+    width: 100%;
+  }
+
+  .img-logo {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 15%;
+    left: 41%;
+  }
+
+  .img-landing {
+    width: 100%;
+    height: 100vh !important;
+  }
+
+  .title-landing {
+    top: 30% !important;
+    left: 25% !important;
+    width: 200px !important;
+    
+  }
+
+  .title {
+    font-size: 58px !important;
+  }
+
+  .description-landing {
+    top: 70% !important;
+    left: 30% !important;
+    width: 150px !important;
+  }
+
+  .description {
+    font-size: 15px !important;
+  }
+
+  .img-style {
+    width: 100%;
+  }
+  // Navbar end 
+
+  .content-box {
+    margin-top: 0px !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .title-box {
+    margin-left: 8%;
+    width: 300px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 25px !important;
+  }
+
+  .shape {
+    height: 75px !important;
+    width: 75px !important;
+  }
+
+  .text-area {
+    padding-top: 80px !important;
+    font-size: 20px !important;
+  }
+
+  .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pos {
+    margin: 40px 10px !important;
+  }
+
+  .small-responsive-text {
+    font-size: 14px;
+    text-align: center;
+    color: #6E6D6D;
+    width: 75%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+  }
+
+  // Intro end
+
+  // .container-fluid {
+  //   margin-top: 22%;
+  // }
+
+  .col-md-6 {
+    padding-left: 0px;
+    padding-right: 1px;
+  }
+
+  .text-box {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 25px !important;
+  }
+
+  .description-box {
+    width: 365px !important;
+    padding-top: 10px !important;
+    padding-right: 10%;
+  }
+
+  .description {
+    font-size: 14px !important;
+    text-align: left;
+  }
+
+  .button-style {
+    margin-left: 15%;
+    font-size: 18px !important;
+  }
+
+  // Our Story end
+
+  .title-box-product {
+    padding-top: 44px !important;
+  }
+
+  .top-landing-box {
+    margin-left: 5%
+  }
+
+  .description-box-product {
+    width: 318px !important;
+    padding-top: 10px !important;
+    padding-right: 0px;
+  }
+
+  .img-large-box {
+    width: 100% !important;
+    height: 291px !important;
+  }
+
+  .bg {
+    background-size:  auto 100%;
+    padding-top: 0px !important;
+    margin-top: 20px !important;
+  }
+
+  .img-ingredient {
+    width: 48px !important;
+    height: 48px !important;
+    margin-left: 40px !important;
+    margin-top: 40px !important;
+  }
+
+  .ingredient-description {
+    width: 80px !important;
+    margin-left: 28% !important;
+    font-size: 12px !important;
+  }
+
+  .small-content-box {
+    height: 130px !important;
+    width: 69% !important;
+  }
+
+  // Product end
+
+  .img-fruit {
+    display: none;
+  }
+
+  .text-box-fruit {
+    display: none;
+  }
+
+  .content-box-fruit {
+    margin-top: 35px !important;
+  }
+
+  .title-fruit {
+    margin-top: 10%;
+  }
+
+  .description-box-fruit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 87%;
+  }
+
+  .benefit {
+    margin-left: 5% !important;
+    margin-top: 9% !important;
+    font-size: 16px !important;
+    width: 300px !important;
+    height: 57px !important;
+    p {
+      padding-top: 17px;
+    }
+  }
+
+  .title-coconut {
+    font-size: 25px !important;
+  }
+
+  .img-box-coconut {
+    margin-top: 20px;
+    width: 100% !important;
+    height: 145px !important;
+  }
+
+  .content-image {
+    margin-top: 10px !important;
+  }
+  // Coco Damnoen end
+
+  .contact {
+    height: auto !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content-box-footer {
+    margin-top: 0px !important;
+    padding-top: 220px;
+    margin-left: 20px !important;
+    text-align: center;
+  }
+
+  .title-contact {
+    font-size: 25px !important;
+  }
+
+  .top-space {
+    font-size: 14px !important;
+  }
+
+  .letter-box {
+    margin-top: 45px !important;
+    margin-left: 0px !important;
+  }
+
+  .input-style {
+    width: 221px !important;
+    height: 44px !important;
+    font-size: 14px !important;
+    display: inline-block;
+  }
+
+  .button-style-contact {
+    height: 44px !important;
+    width: 113px !important;
+    display: inline-block;
+    margin-top: 6px !important;
+    margin-left: 0%;
+    font-size: 14px !important;
+  }
+
+  .title-letter {
+    text-align: center;
+    font-size: 22px !important;
+  }
+
+  .input-box {
+    margin-left: 5%;
+  }
+
+  .icon-box {
+    margin-left: 12%;
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .img-logo {
+    display: none;
+  }
+
+  .small-responsive-text {
+    display: none;
+  }
+
+  .img-mobile-responsive {
+    display: none;
+  }
+
+  .text-box-responsive {
+    display: none;
+  }
+
+
+}

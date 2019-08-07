@@ -1,8 +1,11 @@
 <div class="container-fluid">
-  <div class="content-box">
+  <div class="content-box-fruit">
     <div class="row" *ngIf="aromaticCoconut">
       <div class="col-md-6">
-        <div class="text-box">
+        <div class="img-mobile-responsive"> 
+          <img class="img-style" [src]="aromaticCoconut[0].image_url" alt="">
+        </div> <!-- For mobile design -->
+        <div class="text-box-fruit">
             <div>
               <h1 class="title">{{aromaticCoconut[0].title}}</h1>
             </div>
@@ -29,8 +32,33 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div>
+        <div class="img-fruit">
           <img class="img-style" [src]="aromaticCoconut[0].image_url" alt="">
+        </div>
+        <div class="text-box-responsive"> <!-- For mobile design-->
+            <div class="title-fruit">
+              <h1 class="title">{{aromaticCoconut[0].title}}</h1>
+            </div>
+            <div class="description-box-fruit">
+              <p class="description">{{aromaticCoconut[0].description}}</p>
+            </div>
+            <div class="" *ngIf="aromaticBenefit">
+              <div class="bg-fruit">
+                <div class="benefit">
+                  <p>{{aromaticBenefit[0].name}}</p>
+                </div>
+              </div>
+              <div class="bg-fruit">
+                  <div class="benefit">
+                    <p>{{aromaticBenefit[1].name}}</p>
+                  </div>
+                </div>
+                <div class="bg-fruit">
+                    <div class="benefit">
+                      <p>{{aromaticBenefit[2].name}}</p>
+                    </div>
+                  </div>
+            </div>
         </div>
       </div>
     </div>

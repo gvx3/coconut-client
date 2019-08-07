@@ -1,4 +1,6 @@
-.content-box {
+@import '../../../styles-variable.scss';
+
+.content-box-fruit {
     position: relative;
     margin-top: 100px;
 }
@@ -19,7 +21,7 @@
     width: 530px;
 }
 
-.text-box {
+.text-box-fruit {
     position: absolute;
     top: 25%;
     left: 30%;
@@ -32,6 +34,12 @@
     margin-top: 50px;
     width: 100%;
     height: 100%;
+}
+
+.bg-fruit {
+    background-image: url('../../../assets/img/aromatic_content1-11.png');
+    background-repeat: no-repeat;
+    margin-left: 30px;
 }
 
 .benefit {

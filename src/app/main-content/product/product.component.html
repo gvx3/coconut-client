@@ -1,9 +1,9 @@
 <div class="container-fluid">
-  <div class="text-center" *ngIf="product">
-    <div class="title-box">
+  <div class="top-landing-box text-center" *ngIf="product">
+    <div class="title-box-product">
       <h1>{{product[0].title}}</h1>
     </div>
-    <div class="description-box">
+    <div class="description-box-product">
       <p>{{product[0].description}}</p>
     </div>
   </div>
@@ -18,7 +18,7 @@
       <div class="col-md-6">
         <div class="content-box">
             <div class="row" *ngIf="ingredient">
-              <div class="bg col-md-6" *ngFor="let i of ingredient">
+              <div class="bg col-md-6 col-6" *ngFor="let i of ingredient">
                 <div class="small-content-box">
                   <div class="img-ingredient">
                     <img class="img-style" [src]="i.image_url" alt="">

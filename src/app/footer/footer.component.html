@@ -2,18 +2,20 @@
   <div class="contact">
       <div class="row">
         <div class="col-md-6">
-          <div class="content-box" *ngIf="contact">
+          <div class="content-box-footer" *ngIf="contact">
             <div>
-              <h1 style="font-size: 50px;">Contact us</h1>
+              <h1 class="title-contact">Contact us</h1>
             </div>
             <div class="top-space">
-              {{contact.address}}
-            </div>
-            <div>
-              {{contact.phone}}
-            </div>
-            <div>
-              {{contact.mail}}
+              <div>
+                {{contact.address}}
+              </div>
+              <div>
+                {{contact.phone}}
+              </div>
+              <div>
+                {{contact.mail}}
+              </div>
             </div>
           </div>
             
@@ -22,26 +24,26 @@
         <div class="col-md-6">
           <div class="letter-box">
             <div>
-              <h1 style="font-size: 40px;">Newsletter</h1>
+              <h1 class="title-letter">Newsletter</h1>
             </div>
             <div>
-              <div class="top-space">
+              <div class="input-box">
                 <input class="input-style" placeholder="Email Address" type="text">
-                <button class="btn button-style">Subscribe</button>
+                <button class="btn button-style-contact">Subscribe</button>
               </div>
             </div>
             <div class="icon-box top-space">
               <div class="row" *ngIf="contact">
-                <div class="col-md-3">
+                <div class="col-md-3 col-3">
                   <a href="{{contact.facebook_url}}" target="_blank"><img src="../../assets/img/fb.png" alt=""></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-3">
                   <a href="{{contact.twitter_url}}"  target="_blank"><img src="../../assets/img/twitter.png" alt=""></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-3">
                   <a href="{{contact.instagram_url}}" target="_blank"><img src="../../assets/img/instragram.png" alt=""></a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-3">
                   <a href="{{contact.line_url}}" target="_blank"><img src="../../assets/img/line.png" alt=""></a>
                 </div>
               </div>
