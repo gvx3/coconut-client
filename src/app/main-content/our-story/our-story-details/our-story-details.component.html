@@ -1,13 +1,18 @@
 <div class="container-fluid">
-  <div class="landing text-center" *ngIf="ourstoryLandingPage">
-    <div class="img-landing">
+  <div class="landing-ourstory text-center" *ngIf="ourstoryLandingPage">
+    <div class="img-logo-ourstory"> <!-- Mobile Design -->
+      <a routerLink="/home">
+        <img class="img-logo-style" src="../../../assets/img/Logo.png" alt="">
+      </a>
+    </div>
+    <div class="img-landing-ourstory">
       <img class="img-large-style" [src]="ourstoryLandingPage[0].image_url" alt="">
     </div>
-    <div class="title-landing">
-      <h1 class="title">{{ourstoryLandingPage[0].title}}</h1>
+    <div class="title-landing-ourstory">
+      <h1 class="title-ourstory">{{ourstoryLandingPage[0].title}}</h1>
     </div>
-    <div class="description-landing">
-      <p class="description">{{ourstoryLandingPage[0].description}}</p>
+    <div class="description-landing-ourstory">
+      <p class="description-ourstory">{{ourstoryLandingPage[0].description}}</p>
     </div>
   </div>
 
@@ -31,7 +36,7 @@
             <div>
               <h1 class="story-title">{{item.title}}</h1>
             </div>
-            <div class="description-box">
+            <div class="description-box-ourstory">
               <p class="story-description">{{item.description}}</p>
             </div>
           </div>
@@ -46,7 +51,7 @@
               <div>
                 <h1 class="story-title">{{item.title}}</h1>
               </div>
-              <div class="description-box">
+              <div class="description-box-ourstory">
                 <p class="story-description">{{item.description}}</p>
               </div>
             </div>

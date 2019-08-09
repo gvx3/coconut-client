@@ -1,34 +1,58 @@
 <div class="container-fluid">
-    <div class="landing text-center" *ngIf="storeLandingPage">
+    <div class="landing-store text-center" *ngIf="storeLandingPage">
+      <div class="img-logo-news"> <!-- Mobile Design -->
+        <a routerLink="/home">
+          <img class="img-logo-style" src="../../../assets/img/Logo.png" alt="">
+        </a>
+      </div>
       <div class="img-landing">
-        <img class="" [src]="storeLandingPage[0].image_url" alt="">
+        <img class="img-style" [src]="storeLandingPage[0].image_url" alt="">
       </div>
-      <div class="title-landing">
-          <h1 class="title">{{storeLandingPage[0].title}}</h1>
+      <div class="title-landing-store">
+          <h1 class="title-store">{{storeLandingPage[0].title}}</h1>
       </div>
-      <div class="description-landing">
-          <p class="description">{{storeLandingPage[0].description}}</p>
+      <div class="description-landing-store">
+          <p class="description-store">{{storeLandingPage[0].description}}</p>
       </div>
     </div>
   
-    <div class="container-fluid content"> 
+    <div class="container-fluid content-store"> 
         <div class="" *ngIf="topStoreSuggested">
             <div class="big-card" *ngFor="let item of topStoreSuggested">
               <a href="{{item.url}}" target="_blank">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="img-box">
+                    <div class="img-box-store">
                       <img [src]="item.image_url" alt="" class="img-style">
                     </div>
                   </div>
                   <div class="col-md-8">
                     <div class="text-box">
-                      <h5 class="title-latest">{{item.title}}</h5>
+                      <h5 class="title-store-latest">{{item.title}}</h5>
                       <p class="card-text big-text">{{item.description}}</p>
                     </div>
                   </div>
                 </div>
               </a>
+              </div>
+              <div class="big-card-store-mobile" *ngFor="let item of topStoreSuggested"> <!-- Mobile design-->
+                <div class="store-mobile">
+                  <a href="{{item.url}}" target="_blank">
+                    <div class="row">
+                      <div class="col-md-4 col-4">
+                        <div class="img-box-store">
+                          <img [src]="item.image_url" alt="" class="img-style">
+                        </div>
+                      </div>
+                      <div class="col-md-8 col-8">
+                        <div class="text-box">
+                          <h5 class="title-store-latest">{{item.title}}</h5>
+                          <p class="card-text description-store-mobile">{{item.description}}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
           </div>
     </div>
@@ -42,18 +66,33 @@
             <a href="{{item.url}}" target="_blank">
               <div class="row" >
                 <div class="col-md-4">
-                  <div class="img-box">
+                  <div class="img-box-store">
                     <img [src]="item.image_url" alt="" class="img-style">
                   </div>
                 </div>
                 <div class="col-md-8">
                   <div class="text-box">
-                    <h5 class="title-latest">{{item.title}}</h5>
+                    <h5 class="title-store-latest">{{item.title}}</h5>
                     <p class="card-text big-text">{{item.description}}</p>
                   </div>
                 </div>
               </div>
             </a>
+            </div> 
+            <div class="latest-mobile-responsive" *ngFor="let item of storeLatest"> <!-- Mobile design -->
+              <a [routerLink]="['/news/detail', item.id]">
+                <div class="card small-card-mobile">
+                  <!-- <div class="card-body"> -->
+                    <div class="img-box-latest">
+                      <img [src]="item.image_url" alt="" class="img-style">
+                    </div>
+                    <div class="card-title-box">
+                      <h5 class="card-title text-center small-text-latest">{{item.title}}</h5>
+                      <p class="card-text small-text-description">{{item.description}}</p>
+                    </div>
+                  <!-- </div> -->
+                </div>
+              </a>
             </div>
         </div>
     </div>
@@ -65,16 +104,16 @@
       <div>
         <div class="content-news">
           <div class="row" *ngIf="storeSuggested">
-            <div class="bg col-md-6" *ngFor="let item of storeSuggested">
+            <div class="bg col-md-6 col-6" *ngFor="let item of storeSuggested">
               <a href="{{item.url}}" target="_blank">
                 <div class="card small-card">
                     <div class="card-body">
-                      <div class="img-large-box">
+                      <div class="img-box-suggest">
                         <img [src]="item.image_url" alt="" class="img-large-style">
                       </div>
                       <div class="card-title-box">
-                        <h5 class="card-title">{{item.title}}</h5>
-                        <p class="card-text small-text">{{item.description}}</p>
+                        <h5 class="card-title title-store-suggest">{{item.title}}</h5>
+                        <p class="card-text small-text-description">{{item.description}}</p>
                       </div>
                     </div>
                 </div>

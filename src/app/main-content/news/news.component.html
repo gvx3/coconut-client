@@ -1,19 +1,26 @@
 <div class="container-fluid">
-  <div class="landing text-center" *ngIf="newsLandingPage">
-    <div class="img-landing">
+  <div class="landing-news text-center" *ngIf="newsLandingPage">
+    
+      <div class="img-logo-news"> <!-- Mobile Design -->
+        <a routerLink="/home">
+          <img class="img-logo-style" src="../../../assets/img/Logo.png" alt="">
+        </a>
+      </div>
+    
+    <div class="img-landing-news">
       <img class="img-style" [src]="newsLandingPage[0].image_url" alt="">
     </div>
-    <div class="title-landing">
-        <h1 class="title">{{newsLandingPage[0].title}}</h1>
+    <div class="title-landing-news">
+        <h1 class="title-news">{{newsLandingPage[0].title}}</h1>
     </div>
-    <div class="description-landing">
-        <p class="description">{{newsLandingPage[0].description}}</p>
+    <div class="description-landing-news">
+        <p class="description-news">{{newsLandingPage[0].description}}</p>
     </div>
   </div>
 
-  <div class="container-top-box content"> 
+  <div class="container-top-box"> 
     <div class="row" *ngIf="topNews">   
-      <div class="col-md-4" *ngFor="let item of topNews">
+      <div class="col-md-4 col-6" *ngFor="let item of topNews">
         <a [routerLink]="['/news/detail', item.id]">
           <div class="card small-card">
             <!-- <div class="card-body"> -->
@@ -21,8 +28,8 @@
                 <img [src]="item.image_url" alt="" class="img-style">
               </div>
               <div class="card-title-box">
-                <h5 class="card-title text-center">{{item.title}}</h5>
-                <p class="card-text small-text">{{item.description}}</p>
+                <h5 class="card-title text-center small-text-title">{{item.title}}</h5>
+                <p class="card-text small-text-description">{{item.description}}</p>
               </div>
             <!-- </div> -->
           </div>
@@ -39,7 +46,7 @@
           <a [routerLink]="['/news/detail', item.id]">
             <div class="row">
               <div class="col-md-4">
-                <div class="img-box">
+                <div class="img-box-news">
                   <img [src]="item.image_url" alt="" class="img-style">
                 </div>
               </div>
@@ -52,7 +59,23 @@
             </div>
           </a>
           </div>
+          <div class="latest-mobile-responsive" *ngFor="let item of newsLatest"> <!-- Mobile design -->
+            <a [routerLink]="['/news/detail', item.id]">
+              <div class="card small-card-mobile">
+                <!-- <div class="card-body"> -->
+                  <div class="img-box-latest">
+                    <img [src]="item.image_url" alt="" class="img-style">
+                  </div>
+                  <div class="card-title-box">
+                    <h5 class="card-title text-center small-text-latest">{{item.title}}</h5>
+                    <p class="card-text small-text-description">{{item.description}}</p>
+                  </div>
+                <!-- </div> -->
+              </div>
+            </a>
+          </div>
       </div>
+      
   </div>
 
   <div class="suggest">
@@ -62,7 +85,7 @@
     <div>
       <div class="content-news">
         <div class="row" *ngIf="newsSuggested">
-          <div class="col-md-4" *ngFor="let item of newsSuggested">
+          <div class="col-md-4 col-6" *ngFor="let item of newsSuggested">
               <a [routerLink]="['/news/detail', item.id]">
                   <div class="card small-card">
                       <!-- <div class="card-body"> -->
@@ -70,8 +93,8 @@
                         <img [src]="item.image_url" alt="" class="img-style">
                       </div>
                       <div class="card-title-box">
-                        <h5 class="card-title text-center">{{item.title}}</h5>
-                        <p class="card-text small-text">{{item.description}}</p>
+                        <h5 class="card-title text-center small-text-title">{{item.title}}</h5>
+                        <p class="card-text small-text-description">{{item.description}}</p>
                       </div>
                     <!-- </div> -->
                   </div>
